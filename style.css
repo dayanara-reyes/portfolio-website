@@ -12,6 +12,7 @@ I want all the themes to be customizable, definitely helps me engage more and ch
   --card-bg: #ffffff;
   --font-primary: 'Quicksand', sans-serif;
 }
+
 /* Applything this theme to everyhting from the root so I don't have to directly go in everythign and change it and instead just change 1nce! */
 body {
   font-family: var(--font-primary);
@@ -25,22 +26,47 @@ body {
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1) ;
   transition: all 0.2s ease;
 }
+
+
 /* Header Styles! */
 header, footer {
   text-align: center;
   margin-bottom: 2em;
   color: var(--header-color);
 }
+
+
 /* TITLE */
 h1 {
   font-size: 2.5em;
   margin-bottom: 0.2em;
 }
+
+
 /* SECTIONS */
 section {
   font-size: 2.5em;
   margin-bottom: 2em;
 }
+section h2 {
+  font-size: 1.6em;
+  color: var(--header-color);
+  margin-bottom: 0.4em;
+}
+section p,
+section ul {
+  font-size: 1em;
+  line-height: 1.6;
+}
+section ul {
+  list-style: none;
+  padding-left: 0;
+}
+section ul li {
+  margin-bottom: 0.5em;
+}
+
+
 /* LINKS */
 a {
   color: var(--accent-color);
@@ -51,6 +77,9 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+
+
 /* FOOTER */
 footer {
   text-align: center;
