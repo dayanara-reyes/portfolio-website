@@ -1,21 +1,60 @@
-body {
-  font-family: Arial, sans-serif;
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 1em;
-  background-color: #f8f8f8;
-  color: #333;
-}
+/*
+I want all the themes to be customizable, definitely helps me engage more and change the aesthetic as well as just following along my changing wallpapers every month and creating consistency and these habits I'd like to build
+*/
 
+/*main vars i'll be changing that make changing themes obv and easy*/
+:root {
+  --bg-color: #fff4f8;
+  --accent-color: #ffb3c1;
+  --text-color: #4b4a48;
+  --header-color: #ff7f9c;
+  --card-bg: #ffffff;
+  --card-bg: #ffffff;
+  --font-primary: 'Quicksand', sans-serif;
+}
+/* Applything this theme to everyhting from the root so I don't have to directly go in everythign and change it and instead just change 1nce! */
+body {
+  font-family: var(--font-primary);
+  max-width: 760px;
+  margin: 2em auto;
+  padding: 2em;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 2em ;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1) ;
+  transition: all 0.2s ease;
+}
+/* Header Styles! */
 header, footer {
   text-align: center;
   margin-bottom: 2em;
+  color: var(--header-color);
 }
-
+/* TITLE */
 h1 {
-  color: #4f46e5;
+  font-size: 2.5em;
+  margin-bottom: 0.2em;
+}
+/* SECTIONS */
+section {
+  font-size: 2.5em;
+  margin-bottom: 2em;
+}
+/* LINKS */
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 600;
 }
 
-section {
-  margin-bottom: 2em;
+a:hover {
+  text-decoration: underline;
+}
+/* FOOTER */
+footer {
+  text-align: center;
+  margin-top: 3em;
+  font-size: 0.9em;
+  color: #aa7e88;
 }
