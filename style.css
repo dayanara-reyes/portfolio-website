@@ -58,3 +58,19 @@ footer {
   font-size: 0.9em;
   color: #aa7e88;
 }
+.project-card {
+  background: #ffffff;
+  padding: 1em 1.5em;
+  margin: 1em 0;
+  border: 2px dashed var(--accent-color);
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(255, 179, 193, 0.2);
+  transition: transform 0.2s ease;
+}
+.project-card:hover {
+  transform: scale(1.02);
+}
+.project-card h3 {
+  margin-top: 0;
+  color: var(--accent-color);
+}
