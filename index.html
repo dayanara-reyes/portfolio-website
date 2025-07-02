@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name=""viewport" content=""width=device-width, intiial-scale="1.0" />
+        <meta name="viewport" content="width=device-width, intiial-scale=1.0" />
         <title>
             Yuliana Dayanara Reyes | Portfolio
         </title>
@@ -11,10 +11,19 @@
     </head>
     <body>
         <header>
+            <div class="header-container">
+                <img scr="header-image.jpg" alt="Cute header" class="header-image" />
+                <img src="avatar.png" alt="Avatar" class="avatar-bubble" />
+            </div>
             <h1>Yuliana Dayanara Reyes </h1>
             <p>Computer Science & Physics @ Kalamazoo College</p>
         </header>
-
+        <label for="theme-select">Choose Theme: </label>
+        <select id="theme-select">
+            <option value ="light">Light</option>
+            <option value="ghiblicore">Ghiblicore</option>
+            <option value ="dark">Dark</option>
+        </select>
         <main>
             <section>
                 <h2>About Me</h2>
@@ -44,8 +53,25 @@
         </main>
         <footer>
             <p>
-                Contact: <a:href="yreys514@gmail.com</a> | <a href="">GitHub</a>
+                Contact: <a:href="yreys514@gmail.com">Email Me</a> | <a href="https://github.com/dayanara-reyes">GitHub</a>
             </p>
         </footer>
+        <script>
+            const themeSelect = document.getElementById('theme-select');
+
+
+            themeSelect.addEventListener('change', () => {
+                const theme = themeSelect.value;
+                if(theme === 'light') {
+                    document.documentElement.removeAttribute('data-theme');
+                } else {
+                    document.documentElement.setAttribute('data-theme', theme);
+                }
+            });
+
+            /* most important part default theme */
+            document.documentElement.removeAttribute("data-theme");
+            themeSelect.value = 'light'
+        </script>
     </body>
 </html>
